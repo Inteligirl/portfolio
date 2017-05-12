@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!--
+Name: Tammy Gibson
+Current Date: 3/12/2017
+Class.section: CGS1821.0M1
+Assignment: website built by you about a topic of your choosing
+Language: HTML5, Javascript, jQuery
+Purpose: page for project samples
+Includes: favicon.ico, me.png, form_background_cgs1821_p3.jpg
+-->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <title>My Work</title>
+  <link href="images/favicon_cgs1821_p3.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Sansita|Atomic+Age" rel="stylesheet" type="text/css">
+  <link href="styles/tammy_gibson_cgs1821_p3_normalize.css" rel="stylesheet">
+  <link href="styles/tammy_gibson_cgs1821_p3_main.css" rel="stylesheet">
+  <link href="styles/tammy_gibson_cgs1821_p3_slicknav.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  <!--slider style sheet-->
+  <!-- jquery library -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+  </script>
+  <script src="js/formslider.js">
+  </script><!-- javascript for responsive nav menu -->
+
+  <script src="js/jquery.slicknav.min.js">
+  </script>
+  <script src="js/detectmobilebrowser.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+  </script>
+  <script src="js/formvalid.js">
+  </script>
+</head>
+
+<body id="background_contact">
+  <!--would have made a seperate spreadsheet to reference for this page but kept all css on one page-->
+
+
+  <header>
+    <img alt="My picture" src="images/me_cgs1821_p3.png">
+
+    <h1 class="banner_text_main">Tammy Gibson | Portfolio</h1>
+
+
+    <p class="banner_text_sub">Aspiring Programmer <span id="header_blink">|</span></p>
+  </header>
+
+
+  <nav id="mobilemenu">
+  </nav>
+
+
+  <nav id="nav_menu">
+    <ul>
+      <li>
+        <a class="nav_line" href="tammy_gibson_cgs1821_p3_index.html">Home</a>
+      </li>
+
+
+      <li>
+        <a class="nav_line" href="tammy_gibson_cgs1821_p3_projects.html">My Work</a>
+      </li>
+
+
+      <li>
+        <a class="nav_line" href="tammy_gibson_cgs1821_p3_resources.html">Code Resources</a>
+      </li>
+
+
+      <li>
+        <a class="nav_line" href="tammy_gibson_cgs1821_p3_contact_form.html">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <div class="formWrapper">
+      <form action="sub_form.php" id="contactForm" method="post" name="contactForm">
+        <div class="form_content">
+          <fieldset>
+            <legend class="form_title"></legend>
+
+            <h2><legend class="form_title">CONTACT ME!</legend>
+            </h2>
+            <!--getting error on for in current location check this -->
+
+
+            <p>Interested in hiring me or getting a quote for a project? Fill out the form below and I'll get in touch
+            with you to discuss your ideas. Any information submitted will never shared with any 3rd party.</p>
+
+
+            <p>IF: (</p>
+            <input id="byEmail" name="contactMe" type="radio" value="by Email"> <label for="byEmail">You have a project
+            or idea, that I can help to implement.</label><br>
+            <input id="byPhone" name="contactMe" type="radio" value="by Phone">
+            <!--will change value names after editing php file-->
+             <label for="byPhone">You wish to get me involved in some creative work.</label><br>
+            <input id="needDeveloped" name="contactMe" type="radio" value="need Developed"> <label for=
+            "needDeveloped">Your have code that needs developed.</label><br>
+            <input id="sayHi" name="contactMe" type="radio" value="say Hi"> <label for="sayHi">You just want to say
+            "HI!"</label><br>
+            )
+
+            <p>ELSE IF: ( You can check out my social media profiles on github, codepen, linkedin and facebook )</p>
+
+
+            <p>ELSE: Tell me about yourself.</p>
+            <label for="Fname">First Name</label><br>
+            <input autofocus="" id="Fname" name="Fname" required="" type="text"> <span>*</span><br>
+            <label for="Lname">Last Name</label><br>
+            <input id="Lname" name="Lname" required="" type="text"> <span>*</span><br>
+            <label for="emailAddie">Email</label><br>
+            <input id="emailAddie" name="emailAddie" required="" type="email"> <span>*</span><br>
+            <label for="mailAddie">Mailing Address</label><br>
+            <input id="mailAddie" name="mailAddie" required="" type="text"><br>
+            <label for="City">City</label><br>
+            <input id="City" name="City" required="" type="text"><br>
+            <label for="State">State</label><br>
+            <input id="State" name="State" required="" type="text"><br>
+            <label for="Zip">Zip</label><br>
+            <input id="Zip" name="Zip" required="" type="text"> <span>*</span><br>
+            <label for="phoneNum">Phone</label><br>
+            <input id="phoneNum" name="phoneNum" required="" type="tel"> <span>*</span><br>
+            <br>
+            <label for="rateMe">How would you rate of my Portfolio site?</label><br>
+            <input id="rateMe" name="rateMe" type="text"><br>
+
+
+            <div id="sliderVisual">
+            </div>
+
+
+            <p>How did you hear about my site?</p>
+            <select name="find_site">
+              <option value="linkedin">
+                Linked In
+              </option>
+
+              <option value="github">
+                Git Hub
+              </option>
+
+              <option value="codepen">
+                Codepen.io
+              </option>
+
+              <option value="facebook">
+                Facebook
+              </option>
+
+              <option value="friend">
+                Friend
+              </option>
+
+              <option value="previousclient">
+                Previous Client
+              </option>
+            </select><br>
+
+
+            <p>Information about your project.</p>
+
+            <textarea name="comments" rows="10"></textarea><br>
+			
+            <input id="resetButton" name="resetform" type="reset" value="Reset"> 
+			<input id="submitButton" name="submitform" type="submit" value="Submit">
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+  <footer>
+    <!--SVG Path credit to https://codepen.io/NoahFleitz/pen/MJxrRr -->
+
+
+    <div class="wrapper">
+      <a class="fa fa-3x fa-facebook-square" href="https://www.facebook.com/gocodetammy"></a> <a class=
+      "fa fa-3x fa-envelope-open-o" href="mailto:webmaster@example.com"></a> <a class="fa fa-3x fa-linkedin" href=
+      "https://www.linkedin.com/in/gocodetammy"></a> <a class="fa fa-3x fa-github-alt" href=
+      "https://github.com/Inteligirl"></a> <a class="fa fa-3x fa-codepen" href="https://codepen.io/tammy-gibson/"></a>
+    </div>
+
+
+    <p>Made with love by Tammy Gibson &copy;</p>
+  </footer>
+</body>
+</html>

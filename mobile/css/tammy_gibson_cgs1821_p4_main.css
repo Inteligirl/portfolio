@@ -1,0 +1,418 @@
+/*
+Name: Tammy Gibson
+Current Date: 4/9/2017
+Class.section: CGS1821.0M1
+Assignment: website built by you about a topic of your choosing
+Language: HTML5, Javascript
+Purpose: To display my work portfolio
+Includes: 
+*/
+
+.page-bk {
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url("../content_images/hero_banner_cgs1821_p4.jpg");
+background-position: center;
+text-align: center;
+width: 100%;
+}
+
+.page-bk img {
+	display: block;
+    margin: 0 auto;
+	
+}
+h1, h2, h3, h4 {
+	font-family: Sansita;
+	text-align: center;
+	}
+h1 {font-size: 2em !important;
+	margin: 0 !important;}
+body, .ui-btn {
+    font-family: Droid Sans;
+}
+
+.ui-body.ui-body-a.ui-corner-all img { 
+display: inline-block; 
+margin: 0 1em; 
+width: 60px; 
+height: 60px;
+}
+
+.ui-body.ui-body-a.ui-corner-all {
+  display: inline-flex;
+  margin: 10px 10px 0 10px;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+ 
+  text-align: center;
+}
+.edu_titles {
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+.top_titles {
+  font-family: 'Sansita', sans-serif;
+  text-align: center;
+  padding: .5em 2%;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+  width: 400px; margin: 0 auto;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
+/* Carousel base class */
+.carousel2 {
+  height: 300px;
+  margin-bottom: 60px;
+  width: 400px; margin: 0 auto;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel2 .item {
+  height: 300px;
+  background-color: #777;
+}
+
+
+/**parallax use **/
+
+.parallax {
+  /* The image used */
+  background-image: url("../../images/code_fall_cgs1821_p3.jpg");
+  /*image credit http://melissavandyke.com/dont-fear-the-code/*/
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  vertical-align: center;
+  color: #ffffff;
+  padding: 1em 0;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../../images/lego_cgs1821_p3.jpg");
+  /*image credit  https://www.pexels.com/  */
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  padding: 2em 0;
+  vertical-align: bottom;
+}
+
+#div-table {
+  height: 100%;
+}
+
+figcaption {
+  padding: .5em 10% .25em 10%;
+  font-family: 'Sansita', Serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 150%;
+}
+
+td a:link {
+  color: #000000;
+}
+
+td a:visited {
+  color: #444759;
+}
+
+#resource_table {
+  background: #ffffff;
+  border-radius: 3px;
+  border-collapse: collapse;
+  margin: 0;
+  max-width: 100%;
+  padding: .2em .7em;
+  width: 100%;
+  box-shadow: 0 5px 10px #000000;
+  animation: float 5s infinite;
+}
+
+th {
+  color: #ffffff;
+  background: #342e3c;
+  border-bottom: 4px solid #0ebeff;
+  border-right: 1px solid #000000;
+  padding: .2em .7em;
+  text-align: left;
+  text-shadow: -1px -1px 5px #000000;
+}
+
+
+/* There are two of these so no matter how many columsn the first and last will have rounded corners */
+
+th:first-child {
+  border-top-left-radius: 3px;
+  border-right: none;
+}
+
+th:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color: #444759;
+}
+
+
+/*mouse over color effect for text in data cells*/
+
+tr:hover td {
+  color: #000000;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+
+/* regardless of the number of rows the first and last rows will not have borders showing accordingly*/
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+
+/*mouse over color effect for text in odd data cells*/
+
+tr:nth-child(odd) td {
+  background: #EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+  background: #97fff9;
+}
+
+
+/* regardless of the number of columns the first and last columns will not have borders showing accordingly*/
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+td {
+  background: #FFFFFF;
+  padding: .2em .7em;
+  text-align: left;
+  vertical-align: middle;
+  text-shadow: 1px 1px 3px #bcc2ce;
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0;
+}
+
+figure {
+  padding-bottom: 2em;
+}
+
+tfoot tr td {
+  text-align: center;
+  background: #0ebeff !important;
+  /*trying to figure out how not to use !important*/
+  color: #000000;
+  border-top: none;
+  font-size:110%;
+}
+.main_container {
+  width: 95%;
+  margin: 2em auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 37px -5px;
+  padding: 1em 1em;
+}
+
+.main_container ul li a:link {
+  color: #000000;
+}
+
+.main_container ul li a:visited {
+  color: #444759;
+}
+
+.main_container p {
+  padding: .5em 5% .25em 5%;
+  text-indent: 1em;
+}
+
+/**************************************/
+
+
+/* the styles for the video div */
+
+
+/*************************************/
+
+.vidwrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  width: 100%;
+  margin: .5em auto;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+}
+/******************************************************/
+
+
+/**Styles for the form on contact_form.html**/
+
+
+/******************************************************/
+.error {
+    color:red;
+}
+
+/*******************************/
+
+
+/** Social media icon in footer **/
+
+
+/**SVG Path credit to https://codepen.io/NoahFleitz/pen/MJxrRr **/
+
+
+/*******************************/
+
+.wrapper {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5em;
+}
+
+.wrapper a {
+  padding: 0 2% 0 2%;
+}
+
+.wrapper a:nth-child(1) {
+  color: #4867AA;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(1):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(2) {
+  color: #FF0000;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(2):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(3):hover {
+  margin-top: -10px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(4) {
+  color: #813DB4;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(4):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(5) {
+  color: #000000;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(5):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}

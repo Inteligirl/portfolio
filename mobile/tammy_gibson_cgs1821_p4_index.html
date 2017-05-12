@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+Name: Tammy Gibson
+Current Date: 4/9/2017
+Class.section: CGS1821.0M1
+Assignment: website built by you about a topic of your choosing
+Language: HTML5, Javascript, jQuery mobile, CSS
+Purpose: To display my work portfolio on a mobile first application
+Includes:  
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Tammy Gibson | Portfolio</title>
+	
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Sansita" rel="stylesheet" type="text/css">
+  <link href="css/portfolio-theme.css" rel="stylesheet">
+  <link href="css/jquery.mobile.icons.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+  
+	<!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/tammy_gibson_cgs1821_p4_main.css" rel="stylesheet">
+ 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.js"></script>
+  
+   
+  
+</head>
+<body>
+  <div data-role="page" id="home">
+    <!-- start page -->
+    <div  data-role="header" class="page-bk" >
+      <img alt="me" src="content_images/me_cgs1821_p4.png">
+      <h1>Tammy Gibson | Portfolio</h1>
+      <h2>Aspiring Programmer</h2>
+	  </div><!-- /header hero section-->
+      <div data-role="navbar">
+        
+        <ul>
+          <li>
+            <a data-transition="slidefade" href="#resume">Resume</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#mywork">My Work</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#coderesources">Code Resources</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </div><!-- /navbar -->
+    
+    <div class="ui-content">
+	<div class="main_container">
+      
+      <h2>About Me</h2>
+      <!--I have a difficult time talking about myself on a personal note, but I wanted to push myself to do this site -->
+      <h3>Allow me to introduce myself</h3>
+      <p>My name is Tammy Gibson. I'm looking for an internship with a company, small or large, in the Gainesville,
+      Florida area. I want a company that loves helping thier clients realize their dreams whether it be an app or full
+      website. My focus of studies at the moment are application development with C#, .NET and Visual Studio. I
+      currently work as a Corrections Officer but have always had a life long love of technology. A year ago I decided
+      it was time to change paths in my life and start doing what I love. With each course I complete in college, I
+      gain valuable skills that I want to put to work. I have experience with HTML5, CSS3, Javascript, C++, C#, GIT,
+      MySQL and developing in Visual Studio 2015. My goal is to complete my Bachelor's Degree in Computer Technology
+      and begin my journey with a new career.</p>
+	  </div>
+    </div><!-- /content -->
+    <div data-role="footer">
+	<div class="wrapper">
+      <a class="fa fa-3x fa-facebook-square" href="https://www.facebook.com/gocodetammy"></a> <a class=
+      "fa fa-3x fa-envelope-open-o" href="mailto:webmaster@example.com"></a> <a class="fa fa-3x fa-linkedin" href=
+      "https://www.linkedin.com/in/gocodetammy"></a> <a class="fa fa-3x fa-github-alt" href=
+      "https://github.com/Inteligirl"></a> <a class="fa fa-3x fa-codepen" href="https://codepen.io/tammy-gibson/"></a>
+	  </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
+  
+  <div data-role="page" id="resume">
+    <!-- start page -->
+    <div class="page-bk" data-role="header">
+      <img alt="me" src="content_images/me_cgs1821_p4.png">
+      <h1>Tammy Gibson | Portfolio</h1>
+      <h2>Aspiring Programmer</h2><a class="ui-btn-right" data-icon="home" data-transition="slidefade" href=
+      "#home">Home</a>
+      <div data-role="navbar">
+        
+        <ul>
+          <li>
+            <a class="ui-btn-active" data-transition="slidefade" href="#resume">Resume</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#mywork">My Work</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#coderesources">Code Resources</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /header -->
+    <div class="ui-content">
+	<div class="main_container">
+      <h2>My Resume</h2>
+      <p>I am currently enrolled at Santa Fe community college and work full time as a correctional officer. I have a
+      strong desire for success and eagerness to learn. I currently take all my courses online due to my work schedule.
+      This requires self discipline, a will to succeed and motivation. I offer those qualities to a company ready to
+      give me the oppurtunity to grow with them. I use the assignments from class to learn as much as I can. Check out
+      the my work section of this site to see examples of my class work.</p>
+      <div data-role="collapsibleset">
+        <div data-collapsed-icon="carat-r" data-expanded-icon="carat-d" data-role="collapsible">
+          <h3>Experience</h3>
+          <p class="edu_titles">Santa Fe College / Student<br>
+          August 2016 -Currently Enrolled, Gainesville, Florida</p>
+          <p>My courses at Santa Fe have taught me the foundations of:</p>
+          <ul>
+            <li>Developing a website using HTML5, CSS3</li>
+            <li>Responsive website design</li>
+            <li>jQuery and Javascript</li>
+            <li>Development of C++ applications</li>
+            <li>Development of C# applications</li>
+            <li>Familiarity with Visual Studio 2015</li>
+            <li>Generating SQL querries with MySQL</li>
+            <li>Version Control using Git</li>
+          </ul><br>
+          <p class="edu_titles">Florida Department of Corrections / Corrections Officer<br>
+          August 2003 - Present, Raiford Florida</p>
+          <p>I have thirteen years experience covering a wide variety of duties with the Department of Corrections.
+          Over the years my employment has given me several skills to bring with me:</p>
+          <ul>
+            <li>I work well on my own or part of a team.</li>
+            <li>My work ethic is very strong and I am very motivated to learn.</li>
+            <li>I work very well under pressure and in high stress situations while still producing quality work.</li>
+            <li>Strong organizational skills and a sense of professionalism.</li>
+            <li>I review complex issues regarding Florida Statutes and provide responses to my administration for
+            review.</li>
+            <li>I have always received above average annual reviews from my supervisors about my work.</li>
+            <li>I have worked with people from all types of backgrounds.</li>
+          </ul>
+        </div><!-- experience div -->
+        <div data-collapsed-icon="carat-r" data-expanded-icon="carat-d" data-role="collapsible">
+          <h3>Education</h3><br>
+          <p class="edu_titles">Santa Fe Community College / Associate of Science Degree in Computer Programming and Analysis<br>
+          August 2016 -Currently Enrolled, Gainesville, Florida</p>
+          <p>Currently enrolled to complete this degree. Future goal is to be accepted by Santa Fe for the Bachelor of
+          Applied Science Degree in Computer Information Technology with a focus on programming and analysis.</p>
+          <p class="edu_titles">Santa Fe Community College / Associate of Arts<br>
+          April 2016 -August 2016, Gainesville, Florida</p>
+          <p>I was very close to finishing this degree several years ago and with my reenrollment to college completed
+          the program.</p>
+          <p class="edu_titles">Santa Fe Community College / Associate of Science Degree in Legal Assisting<br>
+          August 2000 - April 2003, Gainesville, Florida</p>
+          <p>When I finished high school I wanted to join the workforce quickly. This degree program secured me work
+          with a local law firm. The knowledge learned from those classes helped me throughout my life and current
+          career with the Department of Corrections.</p>
+        </div><!-- Education div -->
+     </div>
+    </div><!-- end of collapsable set-->
+  </div><!-- /content -->
+  <div data-role="footer">
+	<div class="wrapper">
+      <a class="fa fa-3x fa-facebook-square" href="https://www.facebook.com/gocodetammy"></a> <a class=
+      "fa fa-3x fa-envelope-open-o" href="mailto:webmaster@example.com"></a> <a class="fa fa-3x fa-linkedin" href=
+      "https://www.linkedin.com/in/gocodetammy"></a> <a class="fa fa-3x fa-github-alt" href=
+      "https://github.com/Inteligirl"></a> <a class="fa fa-3x fa-codepen" href="https://codepen.io/tammy-gibson/"></a>
+	  </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
+  
+  
+  <div data-role="page" id="mywork">
+    <!-- start page -->
+    <div class="page-bk" data-role="header">
+      <img alt="me" src="content_images/me_cgs1821_p4.png">
+      <h1>Tammy Gibson | Portfolio</h1>
+      <h2>Aspiring Programmer</h2><a class="ui-btn-right" data-icon="home" data-transition="slidefade" href=
+      "#home">Home</a>
+      <div data-role="navbar">
+        
+        <ul>
+          <li>
+            <a data-transition="slidefade" href="#resume">Resume</a>
+          </li>
+          <li>
+            <a class="ui-btn-active" data-transition="slidefade" href="#mywork">My Work</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#coderesources">Code Resources</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /header -->
+    <div class="ui-content">
+	<h3 class="ui-bar ui-bar-a ui-corner-all">Things I Love</h3>
+	<div class="ui-body ui-body-a ui-corner-all">
+	 
+        <!-- images free from http://www.iconarchive.com -->
+        <div>
+		<img alt="HTML5 CSS3 Javascript" src="content_images/webdev_logo_cgs1821_p3.png"> 
+        </div>
+		
+		<div>
+        <img alt="C++" src="content_images/cplus_cgs1821_p3.png">        
+		</div>
+		
+		<div>
+        <img alt="C#" src="content_images/csharp_cgs1821_p3.png">        
+		</div>
+		
+		<div>
+        <img alt="Visual Studio" src="content_images/visualstudio_cgs1821_p3.png">        
+		</div>
+		
+		<div>
+        <img alt="MySQL" src="content_images/mysql_cgs1821_p3.png">        
+		</div>
+		
+		<div>
+        <img alt="Git Hub" src="content_images/github_cgs1821_p3.png">        
+		</div>
+	</div> 
+	<div>
+	<div class="main_container">
+        <p class="top_titles">My Work</p>
+
+
+        <p>Below are examples of past projects I have completed for classes in college. Most of these are pretty basic
+        but become more complex as the semester progressed. The building of <a href=
+        "https://github.com/Inteligirl/portfoliosite">this portfolio site</a> can be found on Github as well.If you
+        would like to see more of the project's code base click on the image to visit the github repository for it. The
+        repositories for my work contain readme files that describe each project, the requirements and my thoughts on
+        developing the program.</p>
+
+	</div>
+        <p class="top_titles">C++ using Visual Studio 2015</p>
+
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide container" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+		</ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="../images/char_converter_cgs1821_p3.png" alt="Character Converter">
+          <div class="container">
+            <div class="carousel-caption">              
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/Project-7-Arrays" role="button">Character Converter</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="../images/compare_function_cgs1821_p3.png" alt="Compare Function">
+          <div class="container">
+            <div class="carousel-caption">              
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/compare-function" role="button">Compare Function</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="../images/geometry_calculator_cgs1821_p3.png" alt="Geometry Calculator">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/geometry-calculator" role="button">Geometry Calculator</a></p>
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="fourth-slide" src="../images/gratuity_calculator_cgs1821_p3.png" alt="Gratuity Calculator">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/geometry-calculator" role="button">Gratuity Calculator</a></p>
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="fifth-slide" src="../images/student_lineup_cgs1821_p3.png" alt="Student Lineup">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/student-lineup" role="button">Student Lineup</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+        
+
+        <p class="top_titles">C# .Net using Visual Studio 2015</p>
+
+	<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel2" class="carousel slide container" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel2" data-slide-to="1"></li>
+        <li data-target="#myCarousel2" data-slide-to="2"></li>
+		<li data-target="#myCarousel2" data-slide-to="3"></li>
+		<li data-target="#myCarousel2" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="../images/orion_cgs1821_p3.png" alt="Orion">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/orionProject1" role="button">Orion</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="../images/sentence_cgs1821_p3.png" alt="Sentence Builder">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/sentence-builder" role="button">Sentence Builder</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="../images/color_cgs1821_p3.png" alt="Color Mixer">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/colormixer" role="button">Color Mixer</a></p>
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="fourth-slide" src="../images/sales_cgs1821_p3.png" alt="Sales Price Calculator">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/salesPriceCalculator" role="button">Sales Price Calculator</a></p>
+            </div>
+          </div>
+        </div>
+		<div class="item">
+          <img class="fifth-slide" src="../images/random_cgs1821_p3.png" alt="Random Number Generator">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/Inteligirl/c-sharp-random-number" role="button">Random Number Generator</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+        
+      
+	  </div>
+    </div><!-- /content -->
+    <div data-role="footer">
+	<div class="wrapper">
+      <a class="fa fa-3x fa-facebook-square" href="https://www.facebook.com/gocodetammy"></a> <a class=
+      "fa fa-3x fa-envelope-open-o" href="mailto:webmaster@example.com"></a> <a class="fa fa-3x fa-linkedin" href=
+      "https://www.linkedin.com/in/gocodetammy"></a> <a class="fa fa-3x fa-github-alt" href=
+      "https://github.com/Inteligirl"></a> <a class="fa fa-3x fa-codepen" href="https://codepen.io/tammy-gibson/"></a>
+	  </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
+  
+  <div data-role="page" id="coderesources">
+    <!-- start page -->
+    <div class="page-bk" data-role="header">
+      <img alt="me" src="content_images/me_cgs1821_p4.png">
+      <h1>Tammy Gibson | Portfolio</h1>
+      <h2>Aspiring Programmer</h2><a class="ui-btn-right" data-icon="home" data-transition="slidefade" href=
+      "#home">Home</a>
+      <div data-role="navbar">
+        
+        <ul>
+          <li>
+            <a data-transition="slidefade" href="#resume">Resume</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#mywork">My Work</a>
+          </li>
+          <li>
+            <a class="ui-btn-active" data-transition="slidefade" href="#coderesources">Code Resources</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /header -->
+    <div class="ui-content">
+      <div class="main_container">
+	  
+      <p class="top_titles">Share the knowledge</p>
+
+
+      <p>On my journey to learn computer programming I have come across some really great websites for those looking to
+      learn more on their own or find peer groups working on similar projects. As a program devleoper I enjoy helping
+      others learn more about what I do. I like to share knowledge with others maybe struggling with something I just
+      learned. Encouraging new learners to not give up is very rewarding! The table below represents companies that
+      offer training in specific program languages. Most of these companies have nice support forums and I personally
+      use several of them in my spare time to learn about new development software.</p>
+    </div>
+
+
+    <div class="parallax">
+      <p class="top_titles">So you want to learn more code?</p>
+    </div>
+
+
+    <div id="div-table">
+      <figure>
+        <figcaption>
+          My list of websites that I use to teach myself more on specific code issues.
+        </figcaption>
+
+
+        <table id="resource_table">
+          <thead>
+            <tr>
+              <th id="hdr_website" scope="col">Website Name</th>
+
+              <th id="hdr_description" scope="col">Brief Description</th>
+            </tr>
+          </thead>
+
+
+          <tbody>
+            <tr>
+              <td headers="hdr_website">
+                <a href="https://mva.microsoft.com/">Microsoft Virtual Academy</a>
+              </td>
+
+              <td headers="hdr_description">Offers free online courses on a multitude of developer topics. MVA has
+              badges to track acomplishments and progress trackers.</td>
+            </tr>
+
+
+            <tr>
+              <td headers="hdr_website">
+                <a href="http://www.w3schools.com/">W3Schools.com</a>
+              </td>
+
+              <td headers="hdr_description">Offers free tutorials and code samples for HTML, CSS, Javascript and more.
+              This site includes live demos you can edit and really helps when I get stuck on an element.</td>
+            </tr>
+
+
+            <tr>
+              <td headers="hdr_website">
+                <a href="https://egghead.io/">Egghead.io</a>
+              </td>
+
+              <td headers="hdr_description">A more advanced website for users familiar with front end development
+              tools. Has videos and code snippets however requires a monthly subscription fee.</td>
+            </tr>
+
+
+            <tr>
+              <td headers="hdr_website">
+                <a href="https://www.freecodecamp.com/">Free Code Camp</a>
+              </td>
+
+              <td headers="hdr_description">Free online HTML tutorial. Has problems to work through that displays the
+              coding results. This site has a great support forum and upon completion allows you to work with others to
+              build a website for a non-profit organization.</td>
+            </tr>
+
+
+            <tr>
+              <td headers="hdr_website">
+                <a href="https://www.codeschool.com/">Code School</a>
+              </td>
+
+              <td headers="hdr_description">This site covers many different development tools. Its a mix of videos and
+              hands on coding. Code school offers progress trackers and badges to share your achievments. Many of the
+              courses are free but if you want to complete the courses you can sign up to the paid version of the
+              site.</td>
+            </tr>
+
+
+            <tr>
+              <td headers="hdr_website">
+                <a href="https://www.codecademy.com/">Code Academy</a>
+              </td>
+
+              <td headers="hdr_description">Free interactive coding tutorial site. Not as polished as Code School but a
+              great resource for web development.</td>
+            </tr>
+          </tbody>
+
+
+          <tfoot>
+            <tr>
+              <td colspan="2">There are so many resources out there! Some are super indepth while others make games of
+              learning new programming languages.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </figure>
+    </div>
+
+
+    <div class="parallax2">
+      <p class="top_titles">OH Noes! I broke my code</p>
+    </div>
+
+
+    <div class="main_container">
+      <p>This is a mix of websites I use to study specific languages. A quick search of google for html or css
+      questions will usually bring up one of the below websites. On these site I can view code samples and access
+      resources to troubleshoot many development issues.</p>
+
+
+      <ul>
+        <li>
+          <a href="http://eloquentjavascript.net/">Eloquent Javascript</a> - A modern introduction to programming. This
+          is a recommended book for those interested in learning Javascript.
+        </li>
+
+
+        <li>
+          <a href="http://www.cplusplus.com/doc/tutorial/">Cplusplus.com</a> - One of my favortie reference websites
+          for questions regarding the programming language C++. Great forum support and tutorials.
+        </li>
+
+
+        <li>
+          <a href="https://css-tricks.com/">CSS Tricks</a> - Probably my second most visited site. Devoted to CSS with
+          tutorials on various ways to maximize use of CSS. CSS Tricks also has a video and podcast with tutorials.
+          Superb site by Chris Coyier.
+        </li>
+
+
+        <li>
+          <a href="https://fonts.google.com/#ChoosePlace:select">Google Fonts</a> - A great resource for fonts allowing
+          you to see them grouped together. Includes directions for use on your website and samples of available text
+          effects as well.
+        </li>
+
+
+        <li>
+          <a href="http://michaelcrump.net/setting-up-github-to-work-with-visual-studio-2013-step-by-step/">Michael
+          Crump</a> - A tutorial for setting up Git with Visual Studio to push your work to github. This was pretty
+          important for me to learn so I could display my code work online.
+        </li>
+
+
+        <li>
+          <a href="https://codepen.io/">Codepen.io</a> - My favorite website, aside from google for finding code
+          snippets. Registering on this site will allow you to host HTML, CSS and Javascript for the public to view.
+          You can fork other projects into your account and work with the code as well.
+        </li>
+
+
+        <li>
+          <a href="https://www.smashingmagazine.com/">Smashing Magazine</a> - Online magazine for web developers. Up to
+          date articles on trends in website technologies. Lots of topics covered here as well as information on
+          various conventions.
+        </li>
+      </ul>
+
+
+      <p>If all of the above reference material was not enough to get you started then definately check out youtube! I
+      prefer to learn by watching others if I can. Youtube is a great way to watch other people use developer
+      environments and interact with code. I taught myself to use BASH command lines for git that way. Below is a video
+      I made for my C# class this semester after running into a build error. I decided to make a quick video on how to
+      fix the problem. Forgive the use of terminology though as I'm still learning all the proper terms for the
+      language.</p>
+
+
+      <div class="vidwrapper">
+        <iframe allowfullscreen height="315" src="https://www.youtube.com/embed/LA85Jxe2Zng" width="560"></iframe>
+      </div>
+    </div>
+	  </div><!-- /content -->
+        <div data-role="footer">
+      <div class="wrapper">
+      <a class="fa fa-3x fa-facebook-square" href="https://www.facebook.com/gocodetammy"></a> <a class=
+      "fa fa-3x fa-envelope-open-o" href="mailto:webmaster@example.com"></a> <a class="fa fa-3x fa-linkedin" href=
+      "https://www.linkedin.com/in/gocodetammy"></a> <a class="fa fa-3x fa-github-alt" href=
+      "https://github.com/Inteligirl"></a> <a class="fa fa-3x fa-codepen" href="https://codepen.io/tammy-gibson/"></a>
+	  </div>
+    </div><!-- /footer -->
+    </div><!-- /page -->
+  
+  <div data-role="page" id="contactme">
+    <!-- start page -->
+    <div class="page-bk" data-role="header">
+      <img alt="me" src="content_images/me_cgs1821_p4.png">
+      <h1>Tammy Gibson | Portfolio</h1>
+      <h2>Aspiring Programmer</h2><a class="ui-btn-right" data-icon="home" data-transition="slidefade" href=
+      "#home">Home</a>
+      <div data-role="navbar">
+        
+        <ul>
+          <li>
+            <a data-transition="slidefade" href="#resume">Resume</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#mywork">My Work</a>
+          </li>
+          <li>
+            <a data-transition="slidefade" href="#coderesources">Code Resources</a>
+          </li>
+          <li>
+            <a class="ui-btn-active" data-transition="slidefade" href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!-- /header -->
+    <div class="ui-content">
+        <form action="sub_form.php" id="contactForm" method="get" name="contactForm">
+        <div data-role="content">
+          
+            
+            <h3>CONTACT ME!</h3>
+          
+
+
+            <p>Interested in hiring me or getting a quote for a project? Fill out the form below and I'll get in touch
+            with you to discuss your ideas. Any information submitted will never shared with any 3rd party.</p>
+
+			<fieldset data-role="controlgroup">
+			<legend>What would you like to talk about?</legend>
+			<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+			<label for="radio-choice-1">You have a project
+            or idea, that I can help to implement.</label>
+			
+			<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+			<label for="radio-choice-2">You wish to get me involved in some creative work.</label>
+			
+			<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+			<label for="radio-choice-3">You have code that needs developed.</label>
+			
+			<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4">
+			<label for="radio-choice-4">You just want to say
+            "HI!"</label>
+			
+			</fieldset>
+            
+			<h3>Check out my social media profiles on github, codepen, linkedin and facebook with the links at the bottom of the page.</h3>
+
+
+            <h3>Tell me about yourself</h3>
+			<div data-role="fieldcontainer">
+            <label for="Fname">First Name</label>
+            <input id="Fname" name="Fname" required="" type="text" class="required" placeholder="Enter First Name *Required*"> 
+			<label></label>
+			</div>
+			<div data-role="fieldcontainer">
+            <label for="Lname">Last Name</label>
+            <input id="Lname" name="Lname" required="" type="text" class="required" placeholder="Enter Last Name *Required*"> 
+			<label></label>
+			</div>
+			<div data-role="fieldcontainer">
+            <label for="emailAddie">Email</label>
+            <input id="emailAddie" name="emailAddie" required="" type="email" class="required" placeholder="johnsmith@email.com *Required*"> 
+			<label></label>
+			</div>
+            <label for="mailAddie">Mailing Address</label>
+            <input id="mailAddie" name="mailAddie" type="text" placeholder="Enter Mailing Address">
+            <label for="City">City</label>
+            <input id="City" name="City" type="text" placeholder="Enter City">
+            <label for="State">State</label>
+            <input id="State" name="State" type="text" placeholder="Enter State">
+            <label for="Zip">Zip</label>
+            <input id="Zip" name="Zip" type="text" placeholder="Enter Zip Code"> 
+            <label for="phoneNum">Phone</label>
+            <input id="phoneUS" name="phoneNum" type="tel" placeholder="999-999-9999">
+            <br>
+            <label for="slider-fill">On a scale of 1 to 10, what did you think of my website?</label>
+			<input type="range" name="slider-fill" id="slider-fill" value="1" min="0" max="10" step="1" data-highlight="true">
+
+            <div id="sliderVisual">
+            </div>
+
+<label for="select-choice-a" class="select">How did you hear about my website?</label>
+<select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+    <option>Select one</option>
+    <option value="linkedin">Linked In</option>
+    <option value="github">Git Hub</option>
+    <option value="codepen">Codpen.io</option>
+    <option value="facebook">Facebook</option>
+</select>
+            
+
+            <p>Tell me about your project or leave a message.</p>
+
+            <textarea name="comments" rows="10"></textarea><br>
+            <input id="resetButton" name="resetform" type="reset" value="Reset" data-icon="delete"> 
+			<input id="submitButton" name="submitform" type="submit" value="Submit" data-icon="check">
+         
+		  
+		  
+        </div>
+      </form>
+    
+	
+    </div><!-- /content -->
+    <div data-role="footer">
+      <div class="wrapper">
+      <a class="fa fa-3x fa-facebook-square" href="https://www.facebook.com/gocodetammy"></a> <a class=
+      "fa fa-3x fa-envelope-open-o" href="mailto:webmaster@example.com"></a> <a class="fa fa-3x fa-linkedin" href=
+      "https://www.linkedin.com/in/gocodetammy"></a> <a class="fa fa-3x fa-github-alt" href=
+      "https://github.com/Inteligirl"></a> <a class="fa fa-3x fa-codepen" href="https://codepen.io/tammy-gibson/"></a>
+	  </div>
+    </div><!-- /footer -->
+  </div><!-- /page -->
+</body>
+</html>

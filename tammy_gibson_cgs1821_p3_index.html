@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!--
+Name: Tammy Gibson
+Current Date: 3/12/2017
+Class.section: CGS1821.0M1
+Assignment: website built by you about a topic of your choosing
+Language: HTML5, Javascript
+Purpose: To display my work portfolio
+Includes: favicon_cgs1821_p3.ico, me_cgs1821_p3.png, 
+-->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <title>Tammy Gibson | Portfolio</title>
+  <link href="images/favicon_cgs1821_p3.ico" rel="shortcut icon">
+  <link href="styles/tammy_gibson_cgs1821_p3_normalize.css" rel="stylesheet">
+  <link href="styles/tammy_gibson_cgs1821_p3_main.css" rel="stylesheet">
+  <link href="styles/tammy_gibson_cgs1821_p3_slicknav.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="styles/jquery-ui.css" rel="stylesheet"><!-- javascript for responsive nav menu -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+  </script>
+  <script src="js/jquery.slicknav.min.js">
+  </script>
+  <script src="js/detectmobilebrowser.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+            $( "#accordion" ).accordion({
+            active: false,
+            collapsible: true,
+            heightStyle: "content"});
+            
+  });       
+  </script><!-- reference to google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Sansita" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <img alt="My picture" src="images/me_cgs1821_p3.png">
+
+    <h1 class="banner_text_main">Tammy Gibson | Portfolio</h1>
+
+
+    <p class="banner_text_sub">Aspiring Programmer <span id="header_blink">|</span></p>
+  </header>
+
+
+  <nav id="mobilemenu">
+  </nav>
+
+
+  <nav id="nav_menu">
+    <ul>
+      <li class="nav_line">
+        <a href="tammy_gibson_cgs1821_p3_index.html">Home</a>
+      </li>
+
+
+      <li>
+        <a href="tammy_gibson_cgs1821_p3_projects.html">My Work</a>
+      </li>
+
+
+      <li>
+        <a href="tammy_gibson_cgs1821_p3_resources.html">Code Resources</a>
+      </li>
+
+
+      <li>
+        <a href="tammy_gibson_cgs1821_p3_contact_form.html">Contact Me</a>
+      </li>
+      <!-- this leads to the form required for the site -->
+    </ul>
+  </nav>
+
+
+  <main>
+    <div class="main_container">
+      <div id="about_me_pic_div"><img alt="My picture" src="images/about_me_cgs1821_p3.jpg">
+      </div>
+
+
+      <h2>About Me</h2>
+      <!--I have a difficult time talking about myself on a personal note, but I wanted to push myself to do this site -->
+
+
+      <h3>Allow me to introduce myself</h3>
+
+
+      <p>My name is Tammy Gibson. I'm looking for an internship with a company, small or large, in the Gainesville,
+      Florida area. I want a company that loves helping thier clients realize their dreams whether it be an app or full
+      website. My focus of studies at the moment are application development with C#, .NET and Visual Studio. I
+      currently work as a Corrections Officer but have always had a life long love of technology. A year ago I decided
+      it was time to change paths in my life and start doing what I love. With each course I complete in college, I
+      gain valuable skills that I want to put to work. I have experience with HTML5, CSS3, Javascript, C++, C#, GIT,
+      MySQL and developing in Visual Studio 2015. My goal is to complete my Bachelor's Degree in Computer Technology
+      and begin my journey with a new career.</p>
+    </div>
+
+
+    <div class="resume_container">
+      <h2>My Resume</h2>
+
+
+      <p>I am currently enrolled at Santa Fe community college and work full time as a correctional officer. I have a
+      strong desire for success and eagerness to learn. I currently take all my courses online due to my work schedule.
+      This requires self discipline, a will to succeed and motivation. I offer those qualities to a company ready to
+      give me the oppurtunity to grow with them. I use the assignments from class to learn as much as I can. Check out
+      the my work section of this site to see examples of my class work.</p>
+
+
+      <div class="ui-widget-shadow" id="accordion">
+        <h3>Experience</h3>
+
+
+        <div>
+          <div class="education">
+            <p>Santa Fe College / Student<br>
+            August 2016 -Currently Enrolled, Gainesville, Florida</p>
+          </div>
+
+
+          <p>My courses at Santa Fe have taught me the foundations of:</p>
+
+
+          <ul>
+            <li>Developing a website using HTML5, CSS3</li>
+
+
+            <li>Responsive website design</li>
+
+
+            <li>jQuery and Javascript</li>
+
+
+            <li>Development of C++ applications</li>
+
+
+            <li>Development of C# applications</li>
+
+
+            <li>Familiarity with Visual Studio 2015</li>
+
+
+            <li>Generating SQL querries with MySQL</li>
+
+
+            <li>Version Control using Git</li>
+          </ul>
+
+
+          <div class="education">
+            <p>Florida Department of Corrections / Corrections Officer<br>
+            August 2003 - Present, Raiford Florida</p>
+          </div>
+
+
+          <p>I have thirteen years experience covering a wide variety of duties with the Department of Corrections.
+          Over the years my employment has given me several skills to bring with me:</p>
+
+
+          <ul>
+            <li>I work well on my own or part of a team.</li>
+
+
+            <li>My work ethic is very strong and I am very motivated to learn.</li>
+
+
+            <li>I work very well under pressure and in high stress situations while still producing quality work.</li>
+
+
+            <li>Strong organizational skills and a sense of professionalism.</li>
+
+
+            <li>I review complex issues regarding Florida Statutes and provide responses to my administration for
+            review.</li>
+
+
+            <li>I have always received above average annual reviews from my supervisors about my work.</li>
+
+
+            <li>I have worked with people from all types of backgrounds.</li>
+          </ul>
+        </div>
+
+
+        <h3>Education</h3>
+
+
+        <div>
+          <div class="education">
+            <p>Santa Fe Community College / Associate of Science Degree in Computer Programming and Analysis<br>
+            August 2016 -Currently Enrolled, Gainesville, Florida</p>
+          </div>
+
+
+          <p>Currently enrolled to complete this degree. Future goal is to be accepted by Santa Fe for the Bachelor of
+          Applied Science Degree in Computer Information Technology with a focus on programming and analysis.</p>
+
+
+          <div class="education">
+            <p>Santa Fe Community College / Associate of Arts<br>
+            April 2016 -August 2016, Gainesville, Florida</p>
+          </div>
+
+
+          <p>I was very close to finishing this degree several years ago and with my reenrollment to college completed
+          the program.</p>
+
+
+          <div class="education">
+            <p>Santa Fe Community College / Associate of Science Degree in Legal Assisting<br>
+            August 2000 - April 2003, Gainesville, Florida</p>
+          </div>
+
+
+          <p>When I finished high school I wanted to join the workforce quickly. This degree program secured me work
+          with a local law firm. The knowledge learned from those classes helped me throughout my life and current
+          career with the Department of Corrections.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <!--SVG Path credit to https://codepen.io/NoahFleitz/pen/MJxrRr -->
+
+
+    <div class="wrapper">
+      <a class="fa fa-3x fa-facebook-square" href="https://www.facebook.com/gocodetammy"></a> <a class=
+      "fa fa-3x fa-envelope-open-o" href="mailto:webmaster@example.com"></a> <a class="fa fa-3x fa-linkedin" href=
+      "https://www.linkedin.com/in/gocodetammy"></a> <a class="fa fa-3x fa-github-alt" href=
+      "https://github.com/Inteligirl"></a> <a class="fa fa-3x fa-codepen" href="https://codepen.io/tammy-gibson/"></a>
+    </div>
+
+
+    <p>Made with love by Tammy Gibson &copy;</p>
+  </footer>
+</body>
+</html>

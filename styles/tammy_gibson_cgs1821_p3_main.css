@@ -1,0 +1,988 @@
+/*
+Name: Tammy Gibson
+Current Date: 1/21/2017
+Class.section: CGS1821.0M1
+Assignment: website built by you about a topic of your choosing
+Language: CSS3
+Purpose: To style my current 3 webpages
+Includes:
+*/
+
+
+/*******************************/
+
+
+/* the styles for the elements */
+
+
+/*******************************/
+
+html {
+  background-color: #d9d9e4;
+}
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 18px;
+}
+
+h2,
+h3 {
+  font-family: 'Sansita', Serif;
+  text-align: center;
+  margin: 0;
+}
+
+.top_titles {
+  font-family: 'Sansita', sans-serif;
+  text-align: center;
+  padding: .5em 2%;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/*******************************/
+/* styles for the php         */
+/******************************/
+.phpwrapper {
+	margin-top: 10%;
+    margin-left: 15%;
+    border: 1px solid black;
+    background-color: #ffffff;
+    padding: 2em;
+    text-align: center;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px #135f13;
+}
+
+
+/*******************************/
+
+
+/** the styles for the header **/
+
+
+/*******************************/
+
+
+/* Planning to build a hero image here or use parallax image */
+
+header {
+  padding: 1.5em 0 1.5em 0;
+  background-image: url("../images/hero_banner_cgs1821_p3.jpeg");
+  /*image credit  https://www.pexels.com/  */
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_text_main {
+  font-size: 300%;
+  font-family: 'Sansita', Serif;
+  color: #ffffff;
+  margin: 0;
+  /* to override margin settings in normalize.css */
+  text-shadow: 4px 4px 4px #040405;
+  padding-top: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 15em;
+  animation: type 3s steps(60, end);
+}
+
+.banner_text_sub {
+  font-size: 200%;
+  font-family: 'Sansita', Serif;
+  color: #ffffff;
+  text-shadow: 4px 4px 4px #040405;
+  margin: .5em auto;
+  padding-bottom: 1em;
+  
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+
+header img {
+  float: left;
+  padding: 5em 2% 0 2%;
+}
+
+
+/* span header blink character credit to Rus James forked at https://codepen.io/rusjames/pen/uAFhE */
+
+#header_blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
+
+/**************************************/
+
+
+/* the styles for the navigation menu */
+
+
+/*************************************/
+
+
+/* the css effect for underline animation*/
+
+#nav_menu {
+  background-color: #bdbbc8;
+  padding: .5em .5em;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+#nav_menu ul li {
+  white-space: nowrap;
+  padding: .5em 1em;
+  display: inline;
+}
+
+#nav_menu a {
+  font-family: 'Sansita', Serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 3px solid transparent;
+  width: 0px;
+  transition: 0.5s ease;
+}
+
+#nav_menu a:hover {
+  color: #04c8c7;
+  border-bottom: 3px solid #04c8c7;
+}
+
+#nav_menu>ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+/***********************************/
+
+
+/* the styles for the main element */
+
+
+/***********************************/
+
+main {
+  clear: both;
+  border-top: 2px solid black;
+}
+
+
+/*******************************/
+
+
+/* the styles for the section */
+
+
+/*******************************/
+
+section {
+  width: 80%;
+  margin: auto;
+  padding: 1em 1% 1em 1%;
+  text-align: center;
+}
+
+section p {
+  margin: 0;
+  padding: .2em 5%;
+}
+
+
+/***********************************/
+
+
+/* the styles for the resume div */
+
+
+/***********************************/
+
+.resume_container {
+  width: 60%;
+  margin: 2em auto;
+  padding: 2em 1%;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 0 37px -5px;
+}
+
+
+/*first use of adjacent sibling combinator selector*/
+
+.resume_container h2+p {
+  padding: .5em 10% .25em 10%;
+  text-indent: 1em;
+}
+
+#resume {
+  width: 85%;
+  margin: 2em auto;
+  padding: 2em 1%;
+  background-color: #ffffff;
+  box-shadow: 0 0 37px -5px;
+  text-align: left;
+}
+
+#resume li {
+  font-family: 'Droid Sans', sans-serif;
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+#resume ul {
+  padding: .5em 5% 1em 10%;
+}
+
+.education {
+  -webkit-box-shadow: 0 10px 6px -10px #777;
+  -moz-box-shadow: 0 10px 6px -10px #777;
+  box-shadow: 0 10px 6px -10px #777;
+}
+
+.education p {
+  font-weight: bold;
+  padding: .5em 5% .25em 5%;
+}
+
+
+/**************************************/
+
+
+/** the styles for the main resource div on index */
+
+
+/*************************************/
+
+.main_container {
+  width: 60%;
+  margin: 2em auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 37px -5px;
+  padding: 1em 1em;
+}
+
+.main_container ul li a:link {
+  color: #000000;
+}
+
+.main_container ul li a:visited {
+  color: #444759;
+}
+
+.main_container p {
+  padding: .5em 10% .25em 10%;
+  text-indent: 1em;
+}
+
+.main_container li {
+  list-style-type: disc;
+  margin-left: 5em;
+  padding: .5em 5% .25em 5%;
+}
+
+.main_container ul {
+  padding: .5em 15% 3em 10%;
+}
+
+#about_me_pic_div {
+  float: left;
+  padding: .5em 1% .5em 1%;
+  transform: rotate(-12deg);
+  margin: 2em 8% 2em 4%;
+  -webkit-filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.9));
+  -moz-filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.9));
+  -o-filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.9));
+  -ms-filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.9));
+}
+
+
+/*******************************/
+
+
+/** the styles for the aside on projects **/
+
+
+/*******************************/
+
+#wrapper_main_projects {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  }
+
+aside {
+  float: left;
+  width: 20%;
+  padding: .5em 1% 1em 1%;
+  text-align: center;
+  background: #ffffff;
+  margin: 2em auto;
+  overflow: hidden;
+}
+
+.project_container {
+  float: right;
+  width: 75%;
+  margin: 2em auto;
+  padding: .5em 1% 1em 1%;
+  background-color: #c2beec;
+}
+
+.aside_titles {
+  color: #000000;
+  padding-bottom: 1em;
+  font-family: 'Sansita';
+  margin: 0;
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { from{ margin-left: 100%;} to {margin:left: 0%;}
+100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+aside img {
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 70px;
+  max-height: 70px;
+  -webkit-animation:spin 2s 2s linear;
+    -moz-animation:spin 2s 2s linear;
+    animation:spin 2s 2s linear;
+}
+
+
+/******************************************************/
+
+/**Styles for resources.html
+
+/******************************************************/
+
+
+/**parallax use **/
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/code_fall_cgs1821_p3.jpg");
+  /*image credit http://melissavandyke.com/dont-fear-the-code/*/
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  vertical-align: center;
+  color: #ffffff;
+  padding: 1em 0;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/lego_cgs1821_p3.jpg");
+  /*image credit  https://www.pexels.com/  */
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  padding: 2em 0;
+  vertical-align: bottom;
+}
+
+#div-table {
+  height: 100%;
+}
+
+figcaption {
+  padding: .5em 10% .25em 10%;
+  font-family: 'Sansita', Serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+td a:link {
+  color: #000000;
+}
+
+td a:visited {
+  color: #444759;
+}
+
+#resource_table {
+  background: #ffffff;
+  border-radius: 3px;
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 80%;
+  padding: .2em .7em;
+  width: 70%;
+  box-shadow: 0 5px 10px #000000;
+  animation: float 5s infinite;
+}
+
+th {
+  color: #ffffff;
+  background: #342e3c;
+  border-bottom: 4px solid #0ebeff;
+  border-right: 1px solid #000000;
+  padding: .2em .7em;
+  text-align: left;
+  text-shadow: -1px -1px 5px #000000;
+}
+
+
+/* There are two of these so no matter how many columsn the first and last will have rounded corners */
+
+th:first-child {
+  border-top-left-radius: 3px;
+  border-right: none;
+}
+
+th:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color: #444759;
+}
+
+
+/*mouse over color effect for text in data cells*/
+
+tr:hover td {
+  color: #000000;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+
+/* regardless of the number of rows the first and last rows will not have borders showing accordingly*/
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+
+/*mouse over color effect for text in odd data cells*/
+
+tr:nth-child(odd) td {
+  background: #EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+  background: #97fff9;
+}
+
+
+/* regardless of the number of columns the first and last columns will not have borders showing accordingly*/
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+td {
+  background: #FFFFFF;
+  padding: .2em .7em;
+  text-align: left;
+  vertical-align: middle;
+  text-shadow: 1px 1px 3px #bcc2ce;
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0;
+}
+
+figure {
+  padding-bottom: 2em;
+}
+
+tfoot tr td {
+  text-align: center;
+  background: #0ebeff !important;
+  /*trying to figure out how not to use !important*/
+  color: #000000;
+  border-top: none;
+}
+
+
+/**************************************/
+
+
+/* the styles for the video div */
+
+
+/*************************************/
+
+.vidwrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  width: 60%;
+  margin: .5em auto;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+}
+
+
+/******************************************************/
+
+
+/**Styles for the img on projects.html**/
+
+
+/******************************************************/
+
+.image-box {
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 20px -5px;
+  height: 280px;
+}
+
+.image-box div {
+  background: #fff;
+  height: 100%;
+}
+
+
+/******************************************************/
+
+
+/**Styles for the form on contact_form.html**/
+
+
+/******************************************************/
+
+#background_contact {
+  background: url("../images/form_background_cgs1821_p3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form_title h2 {
+  -moz-transform: rotate(-12deg);
+  -ms-transform: rotate(-12deg);
+  -webkit-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+  -webkit-font-smoothing: subpixel-antialiased;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+}
+
+.formWrapper {
+  margin: 2em auto 0 auto;
+  width: 70%;
+  padding: 2em;
+  background-color: rgba(72, 72, 72, 0.4);
+  box-shadow: 0 0 20px -5px;
+}
+
+.form_content {
+  overflow: hidden;
+  margin: 1em;
+  border: 2px solid black;
+  background-color: rgba(221, 214, 255, 0.8);
+  padding: 1em;
+}
+
+
+/*form element formating*/
+
+input,
+textarea,
+select {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  /*for legace webkit based browswer */
+  -moz-box-sizing: border-box;
+  /*for legacy (firefox <29) gecko based browsers */
+  box-sizing: border-box;
+}
+
+
+/*radio button formatting*/
+
+input[type=radio] {
+  width: 30px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  /*for legace webkit based browswer */
+  -moz-box-sizing: border-box;
+  /*for legacy (firefox <29) gecko based browsers */
+  box-sizing: border-box;
+}
+
+#resetButton,
+#submitButton {
+  font-family: 'Droid Sans', sans-serif;
+  width: 25%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  margin-top: .5em;
+  font-size: 120%;
+}
+
+#resetButton:hover {
+  background-color: #FFA083;
+  color: #000000;
+}
+
+#submitButton:hover {
+  background-color: #ABE8BF;
+  color: #000000;
+}
+
+input:focus {
+  border: 2px solid #32cd32;
+}
+
+fieldset {
+  border: none;
+  padding: 0 2em 0 5em;
+}
+
+#sliderVisual {
+  width: 45%;
+}
+
+#rateMe {
+  background: none;
+  border: 0;
+  color: #000000;
+  width: 80%;
+  padding-bottom: .5em;
+}
+
+
+/*******************************/
+
+
+/** the styles for the footer **/
+
+
+/*******************************/
+
+footer {
+  background-color: #9999a0;
+  clear: both;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+
+/*******************************/
+
+
+/** Social media icon in footer **/
+
+
+/**SVG Path credit to https://codepen.io/NoahFleitz/pen/MJxrRr **/
+
+
+/*******************************/
+
+.wrapper {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5em;
+}
+
+.wrapper a {
+  padding: 0 .3% 0 .3%;
+}
+
+.wrapper a:nth-child(1) {
+  color: #4867AA;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(1):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(2) {
+  color: #FF0000;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(2):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(3):hover {
+  margin-top: -10px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(4) {
+  color: #813DB4;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(4):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}
+
+.wrapper a:nth-child(5) {
+  color: #000000;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+  text-decoration: none;
+}
+
+.wrapper a:nth-child(5):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8px);
+}
+
+
+/*******************************/
+
+
+/** responsive styles section **/
+
+
+/*******************************/
+
+
+/*** hides the nav menu button at bigger resolutions **/
+
+.slicknav_menu {
+  display: none;
+}
+
+
+/* mobile portrait to mobile landscape */
+
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 90%;
+  }
+  #resume li {
+    margin-left: 1em;
+  }
+  #about_me_pic_div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about_me_pic_div {
+    float: none;
+    transform: none;
+  }
+  #wrapper_main_projects aside {
+    display: none;
+  }
+  .main_container {
+    width: 90%;
+  }
+  #resource_table {
+    width: 100%;
+    margin: 0 auto;
+  }
+  figure {
+    margin: 0 auto;
+  }
+  p.top_titles {
+    text-indent: 0;
+    text-align: center;
+  }
+  .main_container li {
+    margin: 0;
+  }
+  .banner_text_main {
+    font-size: 210%;
+  }
+}
+
+
+/* mobile landscape to tablet portrait */
+
+@media only screen and (max-width: 769px) {
+  input,
+  textarea,
+  select {
+    width: 70%;
+  }
+  fieldset {
+    border: none;
+    padding: 0 1em 1em 1em;
+  }
+  .form_content {
+    margin: 0;
+    padding: 0;
+  }
+  header img {
+    float: none;
+    padding: 0;
+  }
+  header {
+    text-align: center;
+    padding: 1.5em 1%;
+  }
+  .banner_text_main {
+    padding: 0;
+    text-align: center;
+  }
+  .banner_text_sub {
+    font-size: 150%;
+  }
+  section.project_container {
+    float: none;
+    width: 80%;
+    margin: 2em auto;
+  }
+  .image-box {
+    background: none;
+    box-shadow: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .image-box img {
+    width: 250px;
+    height: 200px;
+    padding: 1em;
+  }
+  .image-box div {
+    background: none;
+  }
+  #nav_menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+    background-color: #222222 !important;
+  }
+  body {
+    box-shadow: none;
+  }
+}
+
+
+/* tablet portrait to standard 960 */
+
+@media only screen and (max-width: 959px) {
+  aside img {
+    max-width: 110px;
+  }
+  div {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .banner_text_main {
+    animation: none;
+    width: 15em;
+  }
+  .banner_text_sub {
+    animation: none;
+    width: 20em;
+  }
+}
