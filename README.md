@@ -1,5 +1,5 @@
 # Portfolio
-Portfolio site that is also mobile responsive
+Portfolio site that is also mobile responsive.
 Original project looks to have been completed around June of 2017.
 
 ## Program Requirements
